@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPS - Programming for Problem Solving (C Language)</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Prism.js Syntax Highlighting Theme (Tomorrow Night) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<body>
+
+  <div class="app-container">
+    
+    <!-- Mobile Top Nav -->
+    <div class="top-nav">
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <h2>PPS Learner</h2>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <i>💻</i>
+        <h2>PPS Learner</h2>
+      </div>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a class="nav-link active" data-target="home">🏠 Home</a>
+        </li>
+        <!-- Practicals will be injected here by JS -->
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Home View -->
+      <section id="view-home" class="view active">
+        <div class="hero">
+          <h1>Welcome to C Programming! 🚀</h1>
+          <p>Learn Programming for Problem Solving (PPS) the easy way. We'll explore C concepts as simply as possible, step by step.</p>
+          
+          <div class="practical-grid" id="home-practical-grid">
+            <!-- Cards injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Content View -->
+      <section id="view-practical" class="view">
+        <button class="back-btn" id="back-to-home" style="background:none;border:none;color:var(--secondary);cursor:pointer;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
+          <span>←</span> Back to Home
+        </button>
+        
+        <div id="practical-content-container">
+          <!-- Title, Aim, CO will go here -->
+        </div>
+
+        <div id="concepts-container">
+          <!-- Toddler explanations go here -->
+        </div>
+
+        <div id="codes-container">
+          <!-- Code blocks and outputs go here -->
+        </div>
+
+        <div id="quiz-container">
+          <!-- Quiz goes here -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Prism.js Core and C Language Component -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
